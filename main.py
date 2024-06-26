@@ -13,7 +13,7 @@ import openai
 
 # LOCAL
 from dummy_data.db_helpers import add_user, add_reading_record, get_10_reading_records
-from chroma.get_embeddings  import query_collection
+# from chroma.get_embeddings  import query_collection
 from research.chromaDB.weather_api import get_current_weather_data , get_forecast
 
 load_dotenv()
@@ -162,16 +162,16 @@ async def get_translated_response(request:Request):
         records = get_10_reading_records()
 
         # Chroma DB Context (Using Top 2 Matches)
-        local_context = query_collection(user_prompt)
+        # local_context = query_collection(user_prompt)
 
-        data = []
-        for docs in local_context['documents']:
-            for doc in docs:
-                data.append(doc)
+        # data = []
+        # for docs in local_context['documents']:
+        #     for doc in docs:
+        #         data.append(doc)
         
         context = ""
-        for doc in data:
-            context = context + doc + ", " 
+        # for doc in data:
+        #     context = context + doc + ", " 
         
         # Getting Response
         completion_response = OPENAI_CLIENT.chat.completions.create(
@@ -216,16 +216,16 @@ async def get_translated_response(request: Request, user_prompt: str , language:
         records = ""
 
         # Chroma DB Context (Using Top 2 Matches)
-        local_context = query_collection(user_prompt)
+        # local_context = query_collection(user_prompt)
 
-        data = []
-        for docs in local_context['documents']:
-            for doc in docs:
-                data.append(doc)
+        # data = []
+        # for docs in local_context['documents']:
+        #     for doc in docs:
+        #         data.append(doc)
         
         context = ""
-        for doc in data:
-            context = context + doc + ", "
+        # for doc in data:
+        #     context = context + doc + ", "
 
         current_weather_data = get_current_weather_data("Lahore")
 
