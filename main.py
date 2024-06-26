@@ -22,10 +22,9 @@ app = FastAPI()
 
 API_KEY = os.getenv("OPENAI_API_KEY")
 
-api_key ="sk-proj-PnxXgWYeTy5jukDSwICxT3BlbkFJx2mzWolyHw5wZytBynvW"
     
 OPENAI_CLIENT = openai.OpenAI(
-    api_key=api_key,
+    api_key=API_KEY,
 )
 
 def simulate_iot_devices():
