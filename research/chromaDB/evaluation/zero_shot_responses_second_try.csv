@@ -1,0 +1,7 @@
+nitrogen,phosphorus,potassium,temperature,humidity,pH,rainfall,response,label,y_pred
+90,42,43,20.87974371,82.00274423,6.502985292000001,202.9355362,"Based on the data and past experience, rice would be a suitable crop to grow on your farmland.",rice,1
+85,58,41,21.77046169,80.31964408,7.038096361,226.6555374,"Based on your farmland's conditions, rice would be a suitable crop to grow. Your soil and weather conditions match closely with the past conditions where rice was successfully grown.",rice,1
+60,55,44,23.00445915,82.3207629,7.840207144,263.9642476,"Based on the given soil and weather conditions, it is suitable for rice cultivation.",rice,1
+74,35,40,26.49109635,80.15836264,6.980400905,242.8640342,"Based on the data and conditions, growing rice is a good option for your farmland. Your soil and climate conditions are similar to those in which rice has previously thrived.",rice,1
+78,42,42,20.13017482,81.60487287,7.628472891,262.7173405,"Based on the data, rice should grow well in your current farmland conditions.",rice,1
+69,37,42,23.05804872,83.37011772,7.073453503,251.0549998,"Based on the given conditions, rice would be a suitable crop for your farmland.",rice,1
